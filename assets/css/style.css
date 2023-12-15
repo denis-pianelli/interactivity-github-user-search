@@ -1,0 +1,217 @@
+:root.dark {
+  --color-bg: hsl(222, 40%, 13%);
+  --color-bg-alt: hsl(225, 39%, 20%);
+  --color-main: hsl(0, 0%, 100%);
+}
+
+:root.light {
+  --color-bg: hsl(227, 100%, 98%);
+  --color-bg-alt: hsl(0, 0%, 100%);
+  --color-main: hsl(0, 0%, 0%)00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-main);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 2rem;
+}
+
+.light .form-container {
+	box-shadow: 0px 9px 20px 4px #00000014;
+}
+
+.form-container {
+  width: 100%;
+  background-color: var(--color-bg-alt);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+form {
+  display: flex;
+	flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form div {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+form input {
+	width: 400px;
+  font-size: 1rem;
+	background-color: transparent;
+  border: none;
+  color: var(--color-main);
+	margin: 0 1rem;
+}
+
+input::placeholder {
+  color: var(--color-main);
+}
+
+button {
+	flex: 1;
+  background-color: hsl(211, 100%, 50%);
+  border: none;
+  border-radius: 5px;
+  color: var(--color-main);
+  font-weight: bold;
+  padding: 0.7rem 1.3rem;
+  cursor: pointer;
+}
+
+.theme {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.theme span {
+  padding: 0 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.light article {
+	box-shadow: 0px 9px 20px 4px #00000014;
+
+}
+
+article {
+	min-width: 610px;
+  display: flex;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: var(--color-bg-alt);
+  padding: 2rem;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0  0 0 2rem;
+}
+
+.info-container div:nth-child(1) {
+	display: flex;
+}
+
+.bio {
+	max-width: 300px;
+}
+
+.info-container p {
+  font-size: 0.8rem;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name-container div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-container h2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+}
+
+.name-container div p {
+  font-size: 0.8rem;
+  color: hsl(211, 100%, 50%);
+}
+
+.bio {
+  padding: 2rem 0;
+}
+
+.join-date {
+	padding-left: 4rem;
+}
+
+.github-pp {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.content-container {
+  background-color: var(--color-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container div > p {
+  padding: 0.5rem;
+}
+
+.content-container div > p:nth-child(2) {
+  font-weight: bold;
+	font-size: 1.1rem;
+}
+
+.footer-container { 
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.footer-container > div {
+	display: flex;
+	align-items: center;
+	margin: 0 1rem;
+}
+
+.footer-container div > p,
+.footer-container div > a {
+	margin: 1rem;
+}
+
+a {
+	color: hsl(211, 100%, 50%);
+}
