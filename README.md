@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [View my solution live](https://your-live-site-url.com)
+- Live Site URL: [View my solution live](https://denis-pianelli.github.io/interactivity-github-user-search/)
 
 ## My process
 
